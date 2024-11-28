@@ -9,10 +9,10 @@
         <p>Ваше имя: {{ user.first_name }} {{ user.last_name }}</p>
         <p>Ваш ID: {{ user.id }}, ник: {{ user.username }}</p>
       </div>
-      <UButton @click="sendActionToBot">Нажми меня</UButton>
+      <button @click="sendActionToBot">Нажми меня</button>
     </div>
     <div v-else>
-      <UButton>Вы не в телеграме, увы 1</UButton>
+      <span>Вы не в телеграме, увы 1</span>
     </div>
   </div>
 </template>
